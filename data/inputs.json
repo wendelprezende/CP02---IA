@@ -1,0 +1,127 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Produto excelente! Chegou antes do prazo, embalagem impecável e funciona perfeitamente. Super recomendo!",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Veio completamente diferente do anunciado. A cor era outra e o tamanho não batem. Péssima experiência.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "A qualidade é razoável para o preço. Funciona bem no básico, mas poderia ser mais durável.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Entregue no prazo. Produto ok.",
+      "esperado": "NEUTRO"
+    },
+    {
+      "input": "Adorei o produto, mas o frete demorou 15 dias. O atendimento resolveu rápido quando reclamei.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Horrível. Parou de funcionar em 3 dias. Tentei devolver e o vendedor some. NUNCA MAIS.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "Melhor compra do ano! Qualidade premium, chegou em 2 dias com embalagem cuidadosa. Já comprei mais 2.",
+      "esperado": "POSITIVO"
+    }
+  ],
+  "extracao_dados": [
+    {
+      "input": "Comprei o Notebook Dell Inspiron 15 por R$3.499,00 com pixels mortos na tela. Quero trocar.",
+      "esperado": {
+        "produto": "Notebook Dell Inspiron 15",
+        "preco": "R$3.499,00",
+        "defeito": "pixels mortos na tela",
+        "acao_solicitada": "troca"
+      }
+    },
+    {
+      "input": "Meu smartphone Samsung Galaxy A54 de R$1.899 não liga mais após atualização de software.",
+      "esperado": {
+        "produto": "Samsung Galaxy A54",
+        "preco": "R$1.899,00",
+        "defeito": "não liga após atualização de software",
+        "acao_solicitada": "reparo"
+      }
+    },
+    {
+      "input": "A cafeteira Nespresso Vertuo Pop custou R$649 e veio com a bomba barulhenta demais. Quero reembolso.",
+      "esperado": {
+        "produto": "Nespresso Vertuo Pop",
+        "preco": "R$649,00",
+        "defeito": "bomba barulhenta",
+        "acao_solicitada": "reembolso"
+      }
+    },
+    {
+      "input": "Recebi o tênis Nike Air Max 270 tamanho 42 por R$599, mas veio o 41. Preciso trocar urgente.",
+      "esperado": {
+        "produto": "Nike Air Max 270",
+        "preco": "R$599,00",
+        "defeito": "tamanho errado enviado",
+        "acao_solicitada": "troca"
+      }
+    },
+    {
+      "input": "A TV LG 55 polegadas 4K que comprei por R$2.799 apresentou tela escurecendo no canto direito.",
+      "esperado": {
+        "produto": "TV LG 55 polegadas 4K",
+        "preco": "R$2.799,00",
+        "defeito": "tela escurecendo no canto direito",
+        "acao_solicitada": "reparo"
+      }
+    },
+    {
+      "input": "Fone de ouvido JBL Tune 510BT de R$199 com problema no bluetooth: desconecta a cada 5 minutos.",
+      "esperado": {
+        "produto": "JBL Tune 510BT",
+        "preco": "R$199,00",
+        "defeito": "bluetooth desconecta a cada 5 minutos",
+        "acao_solicitada": "reparo"
+      }
+    },
+    {
+      "input": "Liquidificador Philips Walita RI2100 comprado por R$289 com motor queimado na primeira semana.",
+      "esperado": {
+        "produto": "Philips Walita RI2100",
+        "preco": "R$289,00",
+        "defeito": "motor queimado na primeira semana",
+        "acao_solicitada": "troca"
+      }
+    }
+  ],
+  "sumarizacao_review": [
+    {
+      "input": "Produto muito bom! Comprei o Kindle Paperwhite e estou muito satisfeito. A tela é nítida mesmo sob luz solar forte, a bateria dura semanas e o peso é confortável para leitura prolongada. A sincronização com minha biblioteca Amazon foi imediata. Único ponto negativo: a capa original é cara demais, tive que comprar uma terceirizada. No geral, valeu cada centavo dos R$599 pagos. Já li 4 livros este mês!",
+      "esperado": "Kindle Paperwhite aprovado: tela nítida, bateria excelente e sincronização eficiente. Ressalva: capa original cara."
+    },
+    {
+      "input": "Experiência TERRÍVEL com essa loja. Comprei uma cadeira de escritório por R$1.200 que deveria chegar em 7 dias úteis. Passaram-se 25 dias e nada. Liguei 4 vezes para o SAC, cada atendente me dava uma informação diferente. Quando finalmente chegou, veio sem 3 parafusos e uma das rodas quebrada. Abri chamado para troca e até hoje, 15 dias depois, nenhuma resposta. Nunca mais compro aqui.",
+      "esperado": "Experiência negativa: atraso de 25 dias, produto com defeito (parafusos faltando, roda quebrada) e suporte sem retorno."
+    },
+    {
+      "input": "Air Fryer Mondial de 12L chegou no prazo e em perfeito estado. Testei com batatas fritas, frango e até bolo. Os resultados foram excelentes — as batatas ficaram crocantes por fora e macias por dentro sem usar óleo. O digital é intuitivo, com 8 programas pré-configurados. O único incomodo é o barulho durante o uso, mas é aceitável. A limpeza é fácil com a cesta antiaderente. Vale muito pelo preço de R$389.",
+      "esperado": "Air Fryer Mondial 12L aprovada: bom desempenho, digital intuitivo e limpeza fácil. Ponto negativo: ruído durante operação."
+    },
+    {
+      "input": "Produto mediano. O smartwatch chegou conforme descrito, mas a qualidade de construção deixa a desejar para os R$450 cobrados. A pulseira de borracha parece que vai rasgar em breve, o visor arranha com facilidade e a bateria dura apenas 1 dia com GPS ativo. As funcionalidades de saúde (frequência cardíaca, oxigenação) funcionam mas a precisão é questionável comparada ao meu Apple Watch antigo. Para o preço, esperava mais.",
+      "esperado": "Smartwatch com funcionalidades básicas operacionais, mas qualidade inferior ao esperado para R$450: pulseira frágil, bateria curta com GPS."
+    },
+    {
+      "input": "Incrível! Comprei o perfume Sauvage Dior e chegou rapidíssimo, em apenas 1 dia útil. A embalagem estava impecável, selada, claramente original. O cheiro é exatamente o mesmo da loja física onde havia testado antes de comprar online. O preço de R$420 ficou R$180 abaixo da loja física. Vou definitivamente comprar outros produtos desta loja. Nota 10.",
+      "esperado": "Ótima experiência: entrega em 1 dia, produto original com embalagem perfeita e preço R$180 abaixo das lojas físicas."
+    },
+    {
+      "input": "Geladeira Brastemp BRO80AK Frost Free 2 Portas. Entrega agendada, mas os entregadores chegaram 3 horas atrasados. Instalação ok, mas riscaram o piso da cozinha ao empurrar o equipamento. A geladeira em si funciona bem, temperatura estável e silenciosa. O compartimento de gelo automático é prático. Problema: o suporte ao cliente para resolver o arranhão no piso foi péssimo — disseram que não é responsabilidade deles.",
+      "esperado": "Geladeira com bom desempenho (silenciosa, temperatura estável), mas entrega atrasada e dano ao piso não ressarcido pelo suporte."
+    },
+    {
+      "input": "O mouse gamer Logitech G502 Hero que comprei por R$350 é simplesmente fantástico. Preciso altamente para quem joga FPS. A sensibilidade ajustável de 100 a 25.600 DPI, os 11 botões programáveis e o peso customizável fazem uma enorme diferença na jogabilidade. Meu KDA no CS2 melhorou visivelmente após 2 semanas de uso. Único senão: o software Logitech G HUB é pesado e às vezes trava. Fora isso, perfeito.",
+      "esperado": "Logitech G502 Hero excelente para FPS: DPI amplo, 11 botões e peso ajustável. Ressalva: software G HUB instável."
+    }
+  ]
+}

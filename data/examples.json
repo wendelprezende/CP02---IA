@@ -1,0 +1,48 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Adorei! Produto de altíssima qualidade, entrega super rápida.",
+      "output": "POSITIVO"
+    },
+    {
+      "input": "Péssimo produto. Quebrou em uma semana. Atendimento horrível.",
+      "output": "NEGATIVO"
+    },
+    {
+      "input": "O produto é bom, mas o preço está acima do mercado para o que oferece.",
+      "output": "MISTO"
+    },
+    {
+      "input": "Recebi o produto. Está em boas condições.",
+      "output": "NEUTRO"
+    },
+    {
+      "input": "Excelente relação custo-benefício! Porém o prazo de entrega foi 5 dias maior que o prometido.",
+      "output": "MISTO"
+    }
+  ],
+  "extracao_dados": [
+    {
+      "input": "Meu iPhone 14 de R$5.299 caiu e a tela rachou. Quero conserto.",
+      "output": "{\"produto\": \"iPhone 14\", \"preco\": \"R$5.299,00\", \"defeito\": \"tela rachou após queda\", \"acao_solicitada\": \"reparo\"}"
+    },
+    {
+      "input": "Impressora HP DeskJet de R$399 não reconhece cartuchos originais. Preciso trocar.",
+      "output": "{\"produto\": \"HP DeskJet\", \"preco\": \"R$399,00\", \"defeito\": \"não reconhece cartuchos originais\", \"acao_solicitada\": \"troca\"}"
+    },
+    {
+      "input": "Camiseta Nike Dri-Fit por R$89 desbotou na primeira lavagem. Quero reembolso.",
+      "output": "{\"produto\": \"Nike Dri-Fit\", \"preco\": \"R$89,00\", \"defeito\": \"desbotou na primeira lavagem\", \"acao_solicitada\": \"reembolso\"}"
+    }
+  ],
+  "sumarizacao_review": [
+    {
+      "input": "Comprei o livro 'O Poder do Hábito' e a qualidade física é ótima, capa dura resistente. O conteúdo mudou minha perspectiva sobre rotinas. Entrega em 3 dias, embalagem protetora. Recomendo muito para quem quer desenvolver disciplina. Preço justo de R$45.",
+      "output": "Livro com excelente qualidade física, conteúdo transformador e boa entrega em 3 dias. Preço justo."
+    },
+    {
+      "input": "Fone sem fio chegou com a orelha direita sem som. Tentei parear de várias formas, não funcionou. Devolução foi rápida e o vendedor reembolsou em 2 dias. Produto com defeito, mas suporte resolveu.",
+      "output": "Produto com defeito (orelha direita muda), porém suporte eficiente: reembolso em 2 dias."
+    }
+  ]
+}

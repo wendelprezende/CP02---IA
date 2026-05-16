@@ -1,0 +1,43 @@
+{
+  "classificacao_sentimento": {
+    "instrucao": "Classifique a avaliação do cliente como POSITIVO, NEGATIVO, NEUTRO ou MISTO.",
+    "contexto": "Você é um sistema de análise de sentimento para um e-commerce brasileiro.",
+    "formato_output": "Responda APENAS com uma das palavras: POSITIVO, NEGATIVO, NEUTRO ou MISTO. Sem explicação.",
+    "passos_cot": [
+      "Identifique todas as expressões de satisfação ou elogio no texto",
+      "Identifique todas as expressões de insatisfação ou crítica no texto",
+      "Avalie o tom geral predominante",
+      "Se há claramente mais positivo que negativo, classifique como POSITIVO",
+      "Se há claramente mais negativo que positivo, classifique como NEGATIVO",
+      "Se o texto é factual sem emoção clara, classifique como NEUTRO",
+      "Se há pontos positivos e negativos relevantes, classifique como MISTO",
+      "Responda APENAS com a classificação final: POSITIVO, NEGATIVO, NEUTRO ou MISTO"
+    ]
+  },
+  "extracao_dados": {
+    "instrucao": "Extraia informações estruturadas da reclamação do cliente e retorne em formato JSON válido.",
+    "contexto": "Sistema de extração de dados de reclamações de e-commerce para alimentar o CRM.",
+    "formato_output": "JSON com as chaves: produto, preco, defeito, acao_solicitada. Use null para campos ausentes.",
+    "passos_cot": [
+      "Localize o nome exato do produto mencionado no texto",
+      "Localize o valor monetário mencionado (formato R$X.XXX,XX)",
+      "Identifique o problema ou defeito descrito pelo cliente",
+      "Identifique a ação desejada pelo cliente (troca, reembolso, reparo, outro)",
+      "Monte o JSON com as informações extraídas",
+      "Retorne APENAS o JSON válido, sem texto adicional"
+    ]
+  },
+  "sumarizacao_review": {
+    "instrucao": "Resuma a avaliação do cliente em uma única frase objetiva destacando os pontos principais.",
+    "contexto": "Sistema de sumarização de reviews para exibição em dashboards executivos de e-commerce.",
+    "formato_output": "Uma frase de no máximo 25 palavras, em português brasileiro, com tom neutro e informativo.",
+    "passos_cot": [
+      "Identifique o produto ou serviço avaliado",
+      "Liste os 2-3 pontos mais importantes mencionados (positivos e negativos)",
+      "Avalie qual informação é mais relevante para um gestor",
+      "Construa uma frase que capture a essência da avaliação",
+      "Verifique se a frase tem no máximo 25 palavras",
+      "Retorne APENAS a frase final, sem introduções como 'Resumo:'"
+    ]
+  }
+}
